@@ -10,17 +10,42 @@
 .side-bar-header {
   height: 90px;
   padding: 0 20px;
+  background-image: url("https://image.shutterstock.com/image-photo/rear-view-african-american-businessman-260nw-1277759011.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-name a{
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.create-room a {
+  font-size: 10px;
+  border: 2px solid #f0c3dc;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 .rooms {
   background-color: rgb(211, 233, 247);
   height: calc(100vh - 100px);
+  overflow: scroll;
 }
 .room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: rgb(252, 252, 252);
+}
+.chat {
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
   padding: 0 20px;
 }
-.room-header {
+.chat-header {
   height: 90px;
   padding: 0 40px;
 }
