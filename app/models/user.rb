@@ -3,4 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  with_options presence: true do
+    validates :name
+    validates :employee_number, format: { with: /\A[0-9]+\z/, message: 'is invalid. Enter a half-width number'}
+  end
 end
