@@ -8,4 +8,7 @@ class User < ApplicationRecord
     validates :name
     validates :employee_number, format: { with: /\A[0-9]+\z/, message: 'is invalid. Enter a half-width number'}
   end
+
+  has_many :room_users
+  has_many :rooms, through: :room_users
 end
