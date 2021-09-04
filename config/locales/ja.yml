@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        employee_number: 社員番号
+      room:
+        name: チャットルーム名
