@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :name
-    validates :employee_number, format: { with: /\A[0-9]+\z/, message: 'is invalid. Enter a half-width number'}
+    validates :employee_number, format: { with: /\A[0-9]+\z/, message: 'は半角数字で入力してください'}
   end
 
   has_many :room_users

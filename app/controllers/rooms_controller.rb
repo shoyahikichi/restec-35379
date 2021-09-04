@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  protect_from_forgery 
   def new
     @room = Room.new
   end
