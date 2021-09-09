@@ -6,9 +6,11 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :name
-    validates :employee_number, format: { with: /\A[0-9]+\z/, message: 'は半角数字で入力してください'}
+    validates :employee_number, numericality: { with: /\A[0-9]+\z/}
   end
 
   has_many :room_users
   has_many :rooms, through: :room_users
+  has_many :messages
+
 end
