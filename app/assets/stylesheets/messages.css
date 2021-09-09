@@ -33,7 +33,7 @@
   overflow: scroll;
 }
 .room {
-  padding: 20px 0 40px;
+  padding: 20px 0 30px;
 }
 
 .room-name a {
@@ -57,6 +57,10 @@
   margin-top: 36px;
 }
 
+.right-header{
+  display: flex;
+}
+
 .header-button {
   margin-top: 40px;
 }
@@ -65,7 +69,8 @@
   text-decoration: none;
   border: 1px solid darkred;
   color: darkred;
-  padding: 20px;
+  padding: 10px 20px;
+  margin: 1px 20px;
 }
 .messages {
   background-color: #FAFAFA;
